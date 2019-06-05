@@ -8,7 +8,7 @@ M. Fukuda, R. Koenig, I. Nechita "RTNI - A symbolic integrator for Haar-random t
 On this website, one can average matrices symbolically with respect to Haar unitary at easy, but
 there are limitations unlike the above original program:
 <ul>
-<li>All matrices are `n xx n`.</li>
+<li>All matrices are <img src="https://latex.codecogs.com/gif.latex?" $n \times n$/>.</li>
 <li>Only two i.i.d. Haar unitary matrices are allowed.</li>
 <li>The number of conjugate pairs of each Haar unitary matrix should not exceed two.</li>
 </ul>
@@ -25,7 +25,7 @@ Also, one can get the Weingarten functions upto the size of twenty.
 <p>
 An input is a sequence of two kinds of brackets and each bracket contains alphabets and some selected symbols (spaces will be ignored).
 <ul>
-<li>[ ] represents application of trace operation and ( ) otherwise.</li>
+<li> [ ] represents application of trace operation and ( ) otherwise.</li>
 <li>Matrices are represented by upper and lower cases of alphabets at your choince, except for U and V, 
 which are reserved for i.i.d. random Haar unitary matrices.</li>
 <li>+,-,* are used to represent transpose, complex conjugate and adjoint, respectively.</li>
@@ -109,4 +109,4 @@ In each pair (tuple object), the former is the tensor structure and the latter t
 
 
 
-<img src="https://latex.codecogs.com/gif.latex?\inline&space;x[k]\&space;(k=1&space;\dots&space;N)" />
+<img src="https://latex.codecogs.com/gif.latex?" />
