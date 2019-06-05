@@ -1,4 +1,2 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
-<script src="ASCIIMathML.js"></script>
 # RTNI_light
-`ox`
+<img src="https://latex.codecogs.com/gif.latex?\inline&space;x[k]\&space;(k=1&space;\dots&space;N)" />
