@@ -6,7 +6,7 @@ M. Fukuda, R. Koenig, I. Nechita "RTNI - A symbolic integrator for Haar-random t
 </p>
 <p>  
 On this website, one can average matrices symbolically with respect to Haar unitary at easy, but
-there are limitations unlike the above original program:
+there are limitations unlike the above original program: <img src="https://latex.codecogs.com/gif.latex?\inline&space;n \times n" />
 <ul>
 <li>All matrices are <img src="https://latex.codecogs.com/gif.latex?\inline&space;n \times n" />.</li> 
 <li>Only two i.i.d. Haar unitary matrices are allowed.</li>
