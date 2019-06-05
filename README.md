@@ -32,9 +32,9 @@ which are reserved for i.i.d. random Haar unitary matrices.</li>
 </ul>
 Some examples (you do not need "" for the input.):
 <ul>
-<li>"<img src="https://latex.codecogs.com/gif.latex?\inline&space;\mathrm{Trace} [U^*AU] \times \mathrm{Trace}[U^TBU^{-}]" />" should be written as "[U*AU][U+BU-]".</li>  
-<li>"Trace`[U^(**)AU] xx`Trace`[U^(+)BU^(-)]`" should be written as "[U*AU][U+BU-]".</li>
-<li>"Trace`[U^(**)AU] UCU^(**)`" should be written as "[U*AU](UCU*)".</li>
+<li>"<img src="https://latex.codecogs.com/gif.latex?\mathrm{Trace}[U^*AU]&space;\times&space;\mathrm{Trace}[U^TBU^{-}]" />" should be written as "[U*AU][U+BU-]".</li>  
+<li>"<img src="https://latex.codecogs.com/gif.latex?\mathrm{Trace}[U^*AU]&space;\times&space;[UCU^{*}]" />" should be written as "[U*AU][U+BU-]".</li>
+<li>"<img src="https://latex.codecogs.com/gif.latex?U^*AU^T&space;\otimes&space;UCDU^*&space;\otimes&space;VA^TDV^-" />" should be written as "[U*AU](UCU*)".</li>
 <li>"`U^(**)AU^(T) ox UCDU^(**) ox VADV^(-)`" should be written as "(U*AU+)(UCDU*)(VADV-)".</li>
 </ul>
 
@@ -110,5 +110,5 @@ In each pair (tuple object), the former is the tensor structure and the latter t
 
 
 
-<img src="https://latex.codecogs.com/gif.latex?" />
-<img src="https://latex.codecogs.com/gif.latex?\inline&space;F_s" />
+<img src="" />
+
