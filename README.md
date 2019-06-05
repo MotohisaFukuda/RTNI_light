@@ -6,7 +6,7 @@ M. Fukuda, R. Koenig, I. Nechita "RTNI - A symbolic integrator for Haar-random t
 </p>
 <p>  
 On this website, one can average matrices symbolically with respect to Haar unitary at easy, but
-there are limitations unlike the above original program: <img src="https://latex.codecogs.com/gif.latex?\inline&space;n \times n" />
+there are limitations unlike the above original program: 
 <ul>
 <li>All matrices are <img src="https://latex.codecogs.com/gif.latex?\inline&space;n \times n" />.</li> 
 <li>Only two i.i.d. Haar unitary matrices are allowed.</li>
@@ -32,6 +32,7 @@ which are reserved for i.i.d. random Haar unitary matrices.</li>
 </ul>
 Some examples (you do not need "" for the input.):
 <ul>
+<li>"<img src="https://latex.codecogs.com/gif.latex?\inline&space;\mathrm{Trace} [U^*AU] \times \mathrm{Trace}[U^TBU^{-}]" />" should be written as "[U*AU][U+BU-]".</li>  
 <li>"Trace`[U^(**)AU] xx`Trace`[U^(+)BU^(-)]`" should be written as "[U*AU][U+BU-]".</li>
 <li>"Trace`[U^(**)AU] UCU^(**)`" should be written as "[U*AU](UCU*)".</li>
 <li>"`U^(**)AU^(T) ox UCDU^(**) ox VADV^(-)`" should be written as "(U*AU+)(UCDU*)(VADV-)".</li>
