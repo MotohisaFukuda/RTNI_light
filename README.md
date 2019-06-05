@@ -32,10 +32,9 @@ which are reserved for i.i.d. random Haar unitary matrices.</li>
 </ul>
 Some examples (you do not need "" for the input.):
 <ul>
-<li>"<img src="https://latex.codecogs.com/gif.latex?\mathrm{Trace}[U^*AU]&space;\times&space;\mathrm{Trace}[U^TBU^{-}]" />" should be written as "[U*AU][U+BU-]".</li>  
-<li>"<img src="https://latex.codecogs.com/gif.latex?\mathrm{Trace}[U^*AU]&space;\times&space;[UCU^{*}]" />" should be written as "[U*AU][U+BU-]".</li>
-<li>"<img src="https://latex.codecogs.com/gif.latex?U^*AU^T&space;\otimes&space;UCDU^*&space;\otimes&space;VA^TDV^-" />" should be written as "[U*AU](UCU*)".</li>
-<li>"`U^(**)AU^(T) ox UCDU^(**) ox VADV^(-)`" should be written as "(U*AU+)(UCDU*)(VADV-)".</li>
+<li><img src="https://latex.codecogs.com/gif.latex?\mathrm{Trace}[U^*AU]&space;\times&space;\mathrm{Trace}[U^TBU^{-}]" /> should be written as "[U*AU][U+BU-]".</li>  
+<li><img src="https://latex.codecogs.com/gif.latex?\mathrm{Trace}[U^*AU]&space;\times&space;[UCU^{*}]" /> should be written as "[U*AU][U+BU-]".</li>
+<li><img src="https://latex.codecogs.com/gif.latex?U^*AU^T&space;\otimes&space;UCDU^*&space;\otimes&space;VA^TDV^-" /> should be written as "[U*AU](UCU*)".</li>
 </ul>
 
 Note that those top-right symbols in AsciiMath: `T`, `-` and `**` are used in the output format,
