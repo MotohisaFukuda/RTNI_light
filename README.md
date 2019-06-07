@@ -14,5 +14,5 @@ The web-version of RTNI_light can be found at the pythonanywhere website:<br/>
 but there are limitations to save computational resource of the server.
 
 Manual can be found here:
-[Manual](https://motohisafukuda.github.io/RTNI_light/manual.html)<br/>
-which is written as a html file.
+[Manual](https://motohisafukuda.github.io/RTNI_light/manual.html).<br/>
+
