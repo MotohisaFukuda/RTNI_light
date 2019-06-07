@@ -9,10 +9,10 @@ M. Fukuda, R. Koenig, I. Nechita "RTNI - A symbolic integrator for Haar-random t
 The programs of the above paper can be found at the GitHub page:<br/>
 [RTNI at GitHub](https://github.com/MotohisaFukuda/RTNI).
 
-The web-version of RTNI_light can be found at the pythonanywhere:<br/>
-[RTNI_light at GitHub](https://motohisafukuda.pythonanywhere.com)<br/>
+The web-version of RTNI_light can be found at the pythonanywhere website:<br/>
+[RTNI_light web](https://motohisafukuda.pythonanywhere.com)<br/>
 but there are limitations to save computational resource of the server.
 
 For the namual, read:
-[Manual](http://htmlpreview.github.io/?https://github.com/MotohisaFukuda/RTNI_light/blob/master/manual.html)
-
+[Manual](http://htmlpreview.github.io/?https://github.com/MotohisaFukuda/RTNI_light/blob/master/manual.html)<br/>
+which is written as a html file.
