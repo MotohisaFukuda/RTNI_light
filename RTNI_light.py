@@ -2,7 +2,6 @@ from RTNI_light_source import *
 
 Input =  ""
 
-
 # One can customize by changing the following part.
 rms = ("U","V")        
 powers_dic = {"transpose":"+","conjugate":"-","adjoint":"*"}
