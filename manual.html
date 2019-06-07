@@ -1,0 +1,108 @@
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
+<script src="ASCIIMathML.js"></script>
+<body>
+
+<h2>Manual for RTNI_light</h2>
+
+
+
+<hr>
+<h3>How to run the program</h3>
+One can execute the following Python file to run the program.
+
+<figure>
+<figcaption>RTNI_light.py:</figcaption>
+<pre>
+<code>
+from RTNI_light_source import *
+
+Input =  ""
+
+# One can customize by changing the following part.
+rms = ("U","V")        
+powers_dic = {"transpose":"+","conjugate":"-","adjoint":"*"}
+limit = 4
+
+readable, pythonic = RTNI_light(Input, rms=rms, powers_dic = powers_dic, limit = limit)
+print("readable data\n",readable)
+print("pythonic data\n",pythonic) 
+</code>
+</pre>
+</figure>
+
+<ul>
+<li>the tuple: "rms" defines which alphabets (upper or lower-case) represent i.i.d. Haar unitary matrices.</li>
+<li>the dictionary "powers_dic" defines which symbols represent transpose, conjugate and adjoint operations of matrices.</li>
+<li>the number "limit" set the limit for complexity of calculation.</li>
+</ul>
+I believe one can even use some symbols for Haar unitary matrices and some alphabests for matrix operations, 
+but no gurantee. However, "?" and "@" are used within the program, so please do not use them at least. 
+The calculation of "limit" is a bit tricky:<br>
+`prod_(i)^(N)  s_i <= L `<br>
+Here, we have `N` i.i.d. Haar unitary matrices, the number (only counting without-complex-conjugate ones) of each is `s_i`,
+and `L` is "limit".
+The square of the LHS shows how many terms appear in the Weingarten Calculus. 
+By default, it is set to be 4, so two i.i.d. Haar unitary matrices are allowed where one can use two for each.
+<hr>
+
+<h3>How to write input data</h3>
+
+
+<p>
+An input is a sequence of two kinds of brackets and each bracket contains alphabets and some selected symbols (spaces will be ignored),
+and it is supposed to be written in the quotation marks of "Input =  """ in the above file.
+<ul>
+<li>[ ] represents application of trace operation and ( ) otherwise.</li>
+<li> U and V (upper case) are reserved for i.i.d. Haar unitary matrices.
+Any other upper and lower case alphabets can be used to represent matrices. Repetitions are allowed.
+</li>
+<li>+,-,* are used to represent transpose, complex conjugate and adjoint, respectively.</li>
+</ul>
+Some examples (you do not need the outer "" for the input.):
+<ul>
+<li>"Trace`[U^(**)AU] xx`Trace`[U^(T)B overline U]`" should be written as "Input = "[U*AU][U+BU-]"".</li>
+<li>"Trace`[U^(**)AU] UCU^(**)`" should be written as "Input = "[U*AU](UCU*)"".</li>
+<li>"`U^(**)AU^(T) ox UCDU^(**) ox VA^(T)D overline V`" should be written as Input = ""(U*AU+)(UCDU*)(VA+DV-)"".</li>
+</ul>
+
+</p>
+
+<hr>
+<h3>How to read output data</h3>
+ <p>
+In the "readable" output, the bracket "( )" represents the space which was connected to the matrix in the bracket.
+For example,
+<ul>
+<li>The average of "(UAU*)", which means `UAU^(**)`, is 1/n [ Trace[  A+ ]  (U)(U*)], which means `1/n`Trace`[ A^(T) ] I`. <br>
+Note that the identity matrix exists implicitely between (U) and (U*).
+</li>
+<li>The average of "(UAU-)", which means `UAoverlineU`, is 1/n[(U) A+(U-)], which means `1/n A^(T)`. <br>
+Here, the output could be written 1/n [(U-) A(U)], which is the same.
+In this case, the output side of the matrix A is connected to the space which was originally connected to U-, which means that A is transposed.
+</li>
+<li>
+The average of "(UV)(U-V-)", which means `UV ox overlineUoverlineV`, is 1/n [(U)(U-) otimes (V)(V-)]. <br>
+This is just a Bell state.
+</li>
+</ul>
+</p>
+
+
+<p>
+In the pythonic data:
+<ul>
+<li>
+The number, including `n`, is the weight.
+</li>
+<li>
+In each pair (tuple object), the former is the tensor structure and the latter trace structure.
+</li>
+<li>
+[1,1], [-1,1], [1,-1], [-1,-1] correspond respectively to no operation, transpose, complex conjugate and adjoint.
+</li>
+</ul>
+</p>
+<hr>
+</body>
+</html>
