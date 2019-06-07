@@ -406,7 +406,8 @@ class Averager:
 def AM2Plain(String):
     if String == None:
         return None
-    String = String.replace("`", "").replace("^(T) ","+ ").replace("^(-)","- ").replace("^(**)","* ").replace("<br>","\n")
+    String = String.replace("`", "").replace("^(T) ","+ ").replace("^(-)","- ").replace("^(**)","* ")\
+    .replace("<br>","\n").replace("xx"," ").replace("ox", "otimes ")
     return String
 
 def RTNI_light(Integrand, rms = ("U","V") , powers_dic = {"transpose":"+","conjugate":"-","adjoint":"*"}, limit = 4):
